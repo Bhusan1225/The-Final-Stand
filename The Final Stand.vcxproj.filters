@@ -36,18 +36,18 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Charactes\Worrier.cpp">
+    <ClCompile Include="Source\Charactes\Warrior.cpp">
       <Filter>Source Files\Character\Player</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Charactes\Enemy.cpp">
+    <ClCompile Include="Source\Charactes\Enemies\Enemy.cpp">
       <Filter>Source Files\Character\Enemy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header\Character\Worrier.h">
+    <ClInclude Include="Header\Character\Warrior.h">
       <Filter>Header Files\Character\Player</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Character\Enemy.h">
+    <ClInclude Include="Header\Character\Enemies\Enemy.h">
       <Filter>Header Files\Character\Enemy</Filter>
     </ClInclude>
   </ItemGroup>

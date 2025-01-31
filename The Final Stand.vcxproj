@@ -131,13 +131,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Header\Character\Enemy.h" />
-    <ClInclude Include="Header\Character\Worrier.h" />
+    <ClInclude Include="Header\Character\Enemies\Enemy.h" />
+    <ClInclude Include="Header\Character\Warrior.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Charactes\Enemy.cpp" />
+    <ClCompile Include="Source\Charactes\Enemies\Enemy.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Source\Charactes\Worrier.cpp" />
+    <ClCompile Include="Source\Charactes\Warrior.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

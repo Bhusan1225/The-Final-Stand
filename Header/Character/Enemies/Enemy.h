@@ -1,9 +1,9 @@
 #pragma once
 #include <iostream>
-//#include <String>
+#include <vector>
 
 using namespace std;
-
+#include "../../../Header/Character/Warrior.h"
 
 
 namespace Character 
@@ -14,7 +14,6 @@ namespace Character
 		Dragons,
 		Boss
 
-
 	};
 
 	class Enemy 
@@ -22,11 +21,15 @@ namespace Character
 	private:
 		string EnemyName;
 		int health = 100;
+		int attackPower;
 		EnemyType typeOfEnemy;
+	public:
+		Warrior* warrior;
 
 	public :
-		void Attack();
-
+		
+		int Attack();
+		int TakeDamage(Warrior* warrior);
 
 	};
 	
