@@ -73,12 +73,10 @@ namespace Character
 		}
 		else
 		{
-			int updatedHealth = (health - enemy->Attack()) + shieldStrength;
+			int updatedHealth = (health - enemy->Attack()) + shieldProtection;
 			return updatedHealth;
 		}
-		
-		
-		
+	
 	}
 
 	bool Warrior::IsDefenseActive()
