@@ -13,18 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Character">
+      <UniqueIdentifier>{58bf0bb3-d1ef-4607-aeed-b2552ecf4d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Character">
+      <UniqueIdentifier>{71746347-65b7-4972-81fd-003847480f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Character\Player">
+      <UniqueIdentifier>{b465a7ce-2882-41e1-b6d6-fccdc250608f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\Player">
+      <UniqueIdentifier>{788eb333-697c-48ff-949f-23b0cf154b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\Enemy">
+      <UniqueIdentifier>{bc2c50be-b533-443f-807a-042e3e50a61e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Character\Enemy">
+      <UniqueIdentifier>{28ec0d11-7ebe-4c75-b111-3d1916dee7a1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Worrier.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Worrier.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Charactes\Worrier.cpp">
+      <Filter>Source Files\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Charactes\Enemy.cpp">
+      <Filter>Source Files\Character\Enemy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\Character\Worrier.h">
+      <Filter>Header Files\Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Character\Enemy.h">
+      <Filter>Header Files\Character\Enemy</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
