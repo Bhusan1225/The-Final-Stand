@@ -13,7 +13,7 @@ int main()
 
 	cout << "I am Echo, the priest of the Volly Village. What is your name Worrier?\n";
 	cin >> WorrierName;
-	cout << "Welcome" << WorrierName <<"to the Volly, I will guide you.So that you follow the right path"<< endl;
+	cout << "Welcome " << WorrierName <<" to the Volly, I will guide you. So the Shadow does not distract you and you follow the right path."<< endl;
 
 
 
