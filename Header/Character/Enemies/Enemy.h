@@ -24,11 +24,11 @@ namespace Character
         EnemyType typeOfEnemy;
 
     public:
-        Warrior* warrior;  // Now it works because of forward declaration
+        Warrior* warrior;  // Now it will work because of forward declaration
 
     public:
         Enemy();
-        int Attack();
+        virtual int Attack();
         int TakeDamage(Warrior* warrior);
     };
 }

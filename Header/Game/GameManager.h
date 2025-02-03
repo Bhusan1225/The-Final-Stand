@@ -19,7 +19,7 @@ private:
 public:
 	GameManager();;
 	~GameManager();
-	void Initialize(int health, int shortRangedAttack, int longRangedAttack, int shieldProtection);
+	void PlyaerInitialize(int health, int shortRangedAttack, int longRangedAttack, int shieldProtection);
 	bool isWarriorAlive();
 	void PlayLevel();
 	void CompleteLevel();

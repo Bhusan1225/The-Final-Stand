@@ -51,7 +51,7 @@ namespace Game
 	{
 		while (isWarriorAlive() == true)
 		{
-			//Gameloop
+			//Gameloop logic
 		}
 		
 
