@@ -16,10 +16,10 @@ namespace Character {
         class Warrior
         {
         private:
-            int health = 100;
-            int shortRangedAttack = 10;
-            int longRangedAttack = 5;
-            int shieldProtection = 1; // in level 3
+            int health;
+            int shortRangedAttack;
+            int longRangedAttack;
+            int shieldProtection; // in level 3
 
             Distance enemyDistance;
             bool isDefenceActive;
@@ -33,14 +33,16 @@ namespace Character {
 
         public:
             Warrior();
-            Distance CheckDistance(int& minDistace, int& maxDistace);
+            Warrior(int& w_health, int& w_shortRangedAttack, int& w_longRangedAttack, int& w_shieldProtection);
+            Distance CheckDistance(int minDistace, int maxDistace);
             int Attack();
             int ChooseAttack();
             int LongRangeAttack();
             int ShortRangeAttack();
-            int TakeDamage(Enemy* enemy);
+            int TakeDamage(Enemy* enemy, int& health);
             bool IsDefenseActive();
-
+            int getHealth();
+            
             void ActiveSpecialAbility();
         };
     }

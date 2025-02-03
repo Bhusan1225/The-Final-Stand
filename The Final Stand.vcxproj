@@ -134,6 +134,7 @@
     <ClInclude Include="Header\Game\GameManager.h" />
     <ClInclude Include="Header\Character\Enemies\Enemy.h" />
     <ClInclude Include="Header\Character\Warrior\Warrior.h" />
+    <ClInclude Include="Header\Game\GameStatus.h" />
     <ClInclude Include="Header\Game\Level\LevelManager.h" />
     <ClInclude Include="Header\Game\Level\GameLevel.h" />
   </ItemGroup>

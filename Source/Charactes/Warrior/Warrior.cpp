@@ -7,11 +7,23 @@
 namespace Character
 {
   
-        Warrior::Warrior() : enemy(nullptr) {
+        Warrior::Warrior()
+        {
             health = 100;
         }
 
-        Distance Warrior::CheckDistance(int& minDistace, int& maxDistace)
+        Warrior::Warrior(int& w_health, int& w_shortRangedAttack, int& w_longRangedAttack, int& w_shieldProtection)
+        {
+            health = w_health;
+            shortRangedAttack = w_shortRangedAttack;
+            longRangedAttack = w_longRangedAttack;
+            shieldProtection = w_shieldProtection;
+        }
+
+        int Warrior::getHealth() {
+            return health;
+        }
+        Distance Warrior::CheckDistance(int minDistace, int maxDistace)
         {
             srand(static_cast<unsigned>(time(0)));
             int finalDistance = minDistance + rand() % (maxDistance - minDistance + 1);
@@ -56,30 +68,52 @@ namespace Character
             return shortRangedAttack;
         }
 
-        int Warrior::TakeDamage(Enemy* enemy)
+        int Warrior::TakeDamage(Enemy* enemy, int& health)
         {
-            if (IsDefenseActive())
+            /*if (IsDefenseActive() == false)
             {
                 int updatedHealth = health - enemy->Attack();
                 return updatedHealth;
             }
-            else
+            else if (IsDefenseActive() == true)
             {
                 int updatedHealth = (health - enemy->Attack()) + shieldProtection;
                 return updatedHealth;
-            }
+            }*/
+            int updatedHealth = (health - enemy->Attack()) + shieldProtection;
+            return updatedHealth;
         }
 
-        bool Warrior::IsDefenseActive()
+        /*bool Warrior::IsDefenseActive()
         {
             if (playerLevel == GameLevel::Level1 || playerLevel == GameLevel::Level2)
             {
                 return isDefenceActive = false;
             }
-            else
+            else if (playerLevel == GameLevel::Level3)
             {
+                
                 return isDefenceActive = true;
+                shieldProtection = 2;
             }
-        }
+            else if (playerLevel == GameLevel::Level4)
+            {
+                
+                return isDefenceActive = true;
+                shieldProtection = 4;
+            }
+            else if (playerLevel == GameLevel::Level5)
+            {
+                
+                return isDefenceActive = true;
+                shieldProtection = 6;
+            }
+            else if (playerLevel == GameLevel::Level6)
+            {
+                
+                return isDefenceActive = true;
+                shieldProtection = 8;
+            }
+        }*/
     }
     
