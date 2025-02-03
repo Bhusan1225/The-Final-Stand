@@ -19,7 +19,7 @@ namespace Character
     {
     private:
         string EnemyName;
-        int health = 100;
+        int health;
         int attackPower;
         EnemyType typeOfEnemy;
 
@@ -29,6 +29,6 @@ namespace Character
     public:
         Enemy();
         virtual int Attack();
-        int TakeDamage(Warrior* warrior);
+        virtual int TakeDamage(Warrior* warrior, int &health);
     };
 }

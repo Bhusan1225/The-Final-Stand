@@ -137,6 +137,7 @@
     <ClInclude Include="Header\Game\GameStatus.h" />
     <ClInclude Include="Header\Game\Level\LevelManager.h" />
     <ClInclude Include="Header\Game\Level\GameLevel.h" />
+    <ClInclude Include="Header\Character\Enemies\WinterBear.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Game\GameManager.cpp" />
@@ -145,6 +146,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Source\Charactes\Warrior\Warrior.cpp" />
     <ClCompile Include="Header\Game\Level\LevelStatus.h" />
+    <ClCompile Include="Source\Charactes\Enemies\WinterBear.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

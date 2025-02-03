@@ -51,6 +51,9 @@
     <ClCompile Include="Source\Game\GameManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Charactes\Enemies\WinterBear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header\Character\Warrior\Warrior.h">
@@ -69,6 +72,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\Game\GameStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Character\Enemies\WinterBear.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
