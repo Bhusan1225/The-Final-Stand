@@ -54,6 +54,9 @@
     <ClCompile Include="Source\Charactes\Enemies\WinterBear.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Charactes\Enemies\GiantAlphaBear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header\Character\Warrior\Warrior.h">
@@ -75,6 +78,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\Character\Enemies\WinterBear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Character\Enemies\GiantAlphaBear.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -131,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Header\Character\Enemies\GiantAlphaBear.h" />
     <ClInclude Include="Header\Game\GameManager.h" />
     <ClInclude Include="Header\Character\Enemies\Enemy.h" />
     <ClInclude Include="Header\Character\Warrior\Warrior.h" />
@@ -140,6 +141,7 @@
     <ClInclude Include="Header\Character\Enemies\WinterBear.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Charactes\Enemies\GiantAlphaBear.cpp" />
     <ClCompile Include="Source\Game\GameManager.cpp" />
     <ClCompile Include="Source\Game\Level\LevelManager.cpp" />
     <ClCompile Include="Source\Charactes\Enemies\Enemy.cpp" />

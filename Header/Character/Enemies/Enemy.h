@@ -21,7 +21,7 @@ namespace Character
         string EnemyName;
         int health;
         int attackPower;
-        EnemyType typeOfEnemy;
+       
 
     public:
         Warrior* warrior;  // Now it will work because of forward declaration

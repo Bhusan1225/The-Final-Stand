@@ -3,9 +3,12 @@
 
 namespace Character
 {
-    Enemy::Enemy() : attackPower(10)  // Assign default attack power
+    Enemy::Enemy()   // Assign default attack power
     {
+        EnemyName = "Vixen King";
+        attackPower = 6;
         health = 100;
+        cout << "I am the Queen of the Foxes, and your doom is at hand." << endl;
     }
 
     int Enemy::Attack()

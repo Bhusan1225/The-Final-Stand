@@ -4,26 +4,27 @@
 
 namespace Character 
 {
-	class WinterBear : public Enemy
+	class GiantAlphaBear
 	{
-	private:
-		int health = 50;
-		const int maxHealth = 50;
-		int winterPower;
-		int winterShield;
+		int health = 120;
+		int maxHealth = 120;
+		int doublePower;
+		int doubleShield;
+		
 		//script Reference
 		Warrior* warrior;
+		Enemy* enemy;
 
 	public:
-		WinterBear();
+		GiantAlphaBear(Warrior* warrior);
 		int Attack();
 		int TakeDamage(Warrior* warrior, int& health);
 
 
 
 
+
 	};
 }
-
 
 
