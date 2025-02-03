@@ -13,11 +13,16 @@ namespace Character
         return attackPower;
     }
 
-    int Enemy::TakeDamage(Warrior* warrior)
+    int Enemy::TakeDamage(Warrior* warrior, int& health)
     {
-        if (warrior)
+        if (warrior->getHealth() > 0) 
+        {
             return warrior->Attack();
-        else
+        }    
+        else 
+        {
             return 0;
+        }
+            
     }
 }
