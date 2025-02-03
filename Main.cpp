@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
-#include "Header/Level/LevelManager.h"
+#include "Header/Game/Level/LevelManager.h"
 
 using namespace Level;
+//using namespace Level;
 
 int main()
 {
@@ -20,4 +21,8 @@ int main()
 
 	levelManager.GameOptions();
 	
+	GameLevel selectedLevel = levelManager.ChooseGameLevel();
+
+	// You can now use `selectedLevel` for game logic.
+	cout << "Starting the game at Level " << selectedLevel << "...\n";
 };

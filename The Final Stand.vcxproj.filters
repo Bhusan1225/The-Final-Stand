@@ -42,10 +42,13 @@
     <ClCompile Include="Source\Charactes\Enemies\Enemy.cpp">
       <Filter>Source Files\Character\Enemy</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Level\LevelManager.cpp">
+    <ClCompile Include="Source\Game\Level\LevelManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Header\Level\LevelStatus.h">
+    <ClCompile Include="Header\Game\Level\LevelStatus.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,10 +59,13 @@
     <ClInclude Include="Header\Character\Enemies\Enemy.h">
       <Filter>Header Files\Character\Enemy</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Level\LevelManager.h">
+    <ClInclude Include="Header\Game\Level\LevelManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Level\GameLevel.h">
+    <ClInclude Include="Header\Game\Level\GameLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Game\GameManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

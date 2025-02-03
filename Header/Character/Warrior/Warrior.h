@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 using namespace std;
-#include "../../../Header/Level/GameLevel.h"
+#include "../../../Header/Game/Level/GameLevel.h"
 
 // Forward declare Enemy class instead of including "Enemy.h"
 namespace Character {
