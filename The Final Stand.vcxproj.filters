@@ -36,19 +36,31 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Charactes\Warrior.cpp">
+    <ClCompile Include="Source\Charactes\Warrior\Warrior.cpp">
       <Filter>Source Files\Character\Player</Filter>
     </ClCompile>
     <ClCompile Include="Source\Charactes\Enemies\Enemy.cpp">
       <Filter>Source Files\Character\Enemy</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Level\LevelManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Header\Level\LevelStatus.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header\Character\Warrior.h">
+    <ClInclude Include="Header\Character\Warrior\Warrior.h">
       <Filter>Header Files\Character\Player</Filter>
     </ClInclude>
     <ClInclude Include="Header\Character\Enemies\Enemy.h">
       <Filter>Header Files\Character\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Level\LevelManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Level\GameLevel.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

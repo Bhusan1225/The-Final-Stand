@@ -132,12 +132,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Header\Character\Enemies\Enemy.h" />
-    <ClInclude Include="Header\Character\Warrior.h" />
+    <ClInclude Include="Header\Character\Warrior\Warrior.h" />
+    <ClInclude Include="Header\Level\LevelManager.h" />
+    <ClInclude Include="Header\Level\GameLevel.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Level\LevelManager.cpp" />
     <ClCompile Include="Source\Charactes\Enemies\Enemy.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Source\Charactes\Warrior.cpp" />
+    <ClCompile Include="Source\Charactes\Warrior\Warrior.cpp" />
+    <ClCompile Include="Header\Level\LevelStatus.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

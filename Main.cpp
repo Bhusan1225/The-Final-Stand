@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
+#include "Header/Level/LevelManager.h"
 
-
+using namespace Level;
 
 int main()
 {
@@ -15,8 +16,8 @@ int main()
 	cin >> WorrierName;
 	cout << "Welcome " << WorrierName <<" to the Volly, I will guide you. So the Shadow does not distract you and you follow the right path."<< endl;
 
+	LevelManager levelManager;  // Create an instance of LevelManager
 
-
-
-
+	levelManager.GameOptions();
+	
 };

@@ -1,38 +1,34 @@
 #pragma once
 #include <iostream>
 #include <vector>
-
 using namespace std;
-#include "../../../Header/Character/Warrior.h"
 
-
-namespace Character 
+// Forward declare Warrior class instead of including "Warrior.h"
+namespace Character
 {
-	enum EnemyType 
-	{
-		Bear,
-		Dragons,
-		Boss
+    class Warrior;  // Forward declaration
 
-	};
+    enum EnemyType
+    {
+        Bear,
+        Dragons,
+        Boss
+    };
 
-	class Enemy 
-	{
-	private:
-		string EnemyName;
-		int health = 100;
-		int attackPower;
-		EnemyType typeOfEnemy;
-	public:
-		Warrior* warrior;
+    class Enemy
+    {
+    private:
+        string EnemyName;
+        int health = 100;
+        int attackPower;
+        EnemyType typeOfEnemy;
 
-	public :
-		
-		int Attack();
-		int TakeDamage(Warrior* warrior);
+    public:
+        Warrior* warrior;  // Now it works because of forward declaration
 
-	};
-	
-
-
+    public:
+        Enemy();
+        int Attack();
+        int TakeDamage(Warrior* warrior);
+    };
 }
