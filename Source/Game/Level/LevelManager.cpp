@@ -5,7 +5,12 @@
 namespace Level
 {
     
+        LevelManager::LevelManager() 
+        {
 
+
+
+        }
 
         void LevelManager::GameOptions()
         {
@@ -39,6 +44,10 @@ namespace Level
             switch (chooseLevel) {
             case Level1:
                 cout << "You chose Level 1.\n";
+                gameManager.WarriorInitialize(100,10,5,0);
+                gameManager.EnemyInitialize();
+                gameManager.PlayLevel();
+
                 return Level1;
             case Level2:
                 cout << "You chose Level 2.\n";
@@ -62,7 +71,7 @@ namespace Level
 
         }
 
-
+       // return static_cast<GameLevel>(chooseLevel);
     }
 
 

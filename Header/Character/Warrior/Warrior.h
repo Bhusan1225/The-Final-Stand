@@ -16,26 +16,28 @@ namespace Character {
         class Warrior
         {
         private:
-            int health;
+           
             int shortRangedAttack;
             int longRangedAttack;
             int shieldProtection; // in level 3
 
             Distance enemyDistance;
             bool isDefenceActive;
-            int maxDistance = 20;
-            int minDistance = 2;
+            const int maxDistance = 20;
+            const int minDistance = 2;
 
-            GameLevel playerLevel;
+            GameLevel Levelchoosed;
         public:
+            int health;
             string warriorName;
             Enemy* enemy;  // Now it works because of forward declaration
 
         public:
             Warrior();
             Warrior(int& w_health, int& w_shortRangedAttack, int& w_longRangedAttack, int& w_shieldProtection);
-            Distance CheckDistance(int minDistace, int maxDistace);
-            int Attack();
+            Distance CheckDistance(int minDistance, int maxDistance);
+            void InventoryUpdate();
+            //int Attack();
             int ChooseAttack();
             int LongRangeAttack();
             int ShortRangeAttack();
@@ -43,7 +45,7 @@ namespace Character {
             bool IsDefenseActive();
             int getHealth();
             
-            void ActiveSpecialAbility();
+            //void ActiveSpecialAbility();
         };
     }
     

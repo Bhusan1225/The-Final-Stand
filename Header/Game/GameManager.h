@@ -19,10 +19,10 @@ namespace Game
 	private:
 		GameLevel currentLevel;
 		
-		BattleGround* battleGround;  // Keep as a pointer if dynamically allocated
+		BattleGround *battleGround;  // Keep as a pointer if dynamically allocated
 		Character::Enemy* enemy;
 		Character::Warrior* warrior;
-
+		WildEncounterManager *wildEncounter;
 
 
 	public:
@@ -30,7 +30,9 @@ namespace Game
 		~GameManager();
 
 		void WarriorInitialize(int health, int shortRangedAttack, int longRangedAttack, int shieldProtection);
-		
+		Character::Enemy* EnemyInitialize();
+
+
 		bool isWarriorAlive();
 		void PlayLevel();
 		void CompleteLevel();

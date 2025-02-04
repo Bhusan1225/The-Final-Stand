@@ -15,7 +15,7 @@ namespace Character
 
     class Enemy
     {
-    protected:
+    public :
         std::string EnemyName;
         int health;
         int attackPower;
@@ -25,8 +25,9 @@ namespace Character
 
         Enemy();  
         //virtual ~Enemy() {} 
-
+        virtual int getHealth();
         virtual int Attack();
-        virtual int TakeDamage(Warrior* warrior, int& health) = 0;  // Pure virtual function (forces implementation in child classes)
+        virtual int TakeMeleeDamage(Warrior* warrior, int& health);  
+        virtual int TakeRangeDamage(Warrior* warrior, int& health);
     };
 }

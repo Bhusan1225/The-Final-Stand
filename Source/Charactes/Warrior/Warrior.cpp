@@ -7,10 +7,7 @@
 namespace Character
 {
   
-        Warrior::Warrior()
-        {
-            health = 100;
-        }
+      
 
         Warrior::Warrior(int& w_health, int& w_shortRangedAttack, int& w_longRangedAttack, int& w_shieldProtection)
         {
@@ -18,45 +15,62 @@ namespace Character
             shortRangedAttack = w_shortRangedAttack;
             longRangedAttack = w_longRangedAttack;
             shieldProtection = w_shieldProtection;
+            InventoryUpdate();
+        }
+
+        void Warrior::InventoryUpdate()
+        {
+            if (Levelchoosed = Level1)
+            {
+                cout << "Sward: NO";
+                cout << "shield: No";
+                cout << " Armor: No";
+                cout << " Bow: No";
+            }
+            else if (Levelchoosed = Level2)
+            {
+                cout << "Sward: Yes";
+                cout << "shield: No";
+                cout << " Armor: No";
+                cout << " Bow: No";
+            }
+            else if (Levelchoosed = Level3)
+            {
+                cout << "Sward: Yes";
+                cout << "shield: Yes";
+                cout << " Armor: No";
+                cout << " Bow: No";
+            }
+            else if (Levelchoosed = Level4)
+            {
+                cout << "Sward: Yes";
+                cout << "shield: Yes";
+                cout << " Armor: yes";
+                cout << " Bow: No";
+            }
+            else if (Levelchoosed = Level5)
+            {
+                cout << "Sward: Yes";
+                cout << "shield: Yes";
+                cout << " Armor: yes";
+                cout << " Bow: Yes";
+            }
+            else if (Levelchoosed = Level6)
+            {
+                cout << "Sward: Yes";
+                cout << "shield: Yes";
+                cout << " Armor: yes";
+                cout << " Bow: Yes";
+            }
         }
 
         int Warrior::getHealth() {
             return health;
         }
-        Distance Warrior::CheckDistance(int minDistace, int maxDistace)
-        {
-            srand(static_cast<unsigned>(time(0)));
-            int finalDistance = minDistance + rand() % (maxDistance - minDistance + 1);
+       
+       
 
-            if (finalDistance > 5)
-            {
-                enemyDistance = LongDistance;
-            }
-            else
-            {
-                enemyDistance = ShortDistance;
-            }
-
-            return enemyDistance;
-        }
-
-        int Warrior::Attack()
-        {
-            CheckDistance(minDistance, maxDistance);
-            return ChooseAttack();
-        }
-
-        int Warrior::ChooseAttack()
-        {
-            if (enemyDistance == LongDistance)
-            {
-                return LongRangeAttack();
-            }
-            else
-            {
-                return ShortRangeAttack();
-            }
-        }
+       
 
         int Warrior::LongRangeAttack()
         {
@@ -70,50 +84,11 @@ namespace Character
 
         int Warrior::TakeDamage(Enemy* enemy, int& health)
         {
-            /*if (IsDefenseActive() == false)
-            {
-                int updatedHealth = health - enemy->Attack();
-                return updatedHealth;
-            }
-            else if (IsDefenseActive() == true)
-            {
-                int updatedHealth = (health - enemy->Attack()) + shieldProtection;
-                return updatedHealth;
-            }*/
+            
             int updatedHealth = (health - enemy->Attack()) + shieldProtection;
             return updatedHealth;
         }
 
-        /*bool Warrior::IsDefenseActive()
-        {
-            if (playerLevel == GameLevel::Level1 || playerLevel == GameLevel::Level2)
-            {
-                return isDefenceActive = false;
-            }
-            else if (playerLevel == GameLevel::Level3)
-            {
-                
-                return isDefenceActive = true;
-                shieldProtection = 2;
-            }
-            else if (playerLevel == GameLevel::Level4)
-            {
-                
-                return isDefenceActive = true;
-                shieldProtection = 4;
-            }
-            else if (playerLevel == GameLevel::Level5)
-            {
-                
-                return isDefenceActive = true;
-                shieldProtection = 6;
-            }
-            else if (playerLevel == GameLevel::Level6)
-            {
-                
-                return isDefenceActive = true;
-                shieldProtection = 8;
-            }
-        }*/
+        
     }
     

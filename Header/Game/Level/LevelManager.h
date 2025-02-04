@@ -5,7 +5,14 @@ using namespace std;
 
 #include "../../../Header/Game/Level/LevelStatus.h"
 #include"../../../Header/Game/Level/GameLevel.h"
+#include "../../../Header/Game/GameManager.h"
+#include "../../../Header/Game/WildEncounter/WildEncounterManager.h"
 
+namespace Game
+{
+	class GameManager;
+	
+}
 namespace Level 
 {
 	
@@ -15,11 +22,13 @@ namespace Level
 		private:
 			LevelStatus levelStatus;
 			GameLevel gameLevel;
-
+			Game::GameManager gameManager;
+			Game::BattleGround battleground;
+			//BattleGround battleground;
 
 		public:
-
-			//LevelManager();
+			
+			LevelManager();
 			void GameOptions();
 			GameLevel ChooseGameLevel();
 

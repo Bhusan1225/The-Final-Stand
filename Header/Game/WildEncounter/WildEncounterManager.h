@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <vector>
 using namespace std;
@@ -6,6 +7,8 @@ namespace Character
 {
     class Enemy; // Forward declaration inside the correct namespace
 }
+
+
 
 namespace Game
 {

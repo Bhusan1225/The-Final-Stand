@@ -17,8 +17,9 @@ namespace Character
 	public:
 		WinterBear();
 		int Attack();
-		int TakeDamage(Warrior* warrior, int& health);
-
+		int TakeMeleeDamage(Warrior* warrior, int& health) override;
+		int TakeRangeDamage(Warrior* warrior, int& health) override;
+		int getHealth();
 
 
 

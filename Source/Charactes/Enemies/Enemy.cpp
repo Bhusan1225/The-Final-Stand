@@ -16,16 +16,35 @@ namespace Character
         return attackPower;
     }
 
-    int Enemy::TakeDamage(Warrior* warrior, int& health)
+    int Enemy::TakeMeleeDamage(Warrior* warrior, int& health)
     {
-        if (warrior->getHealth() > 0) 
+        if ( warrior->getHealth() > 0)
         {
-            return warrior->Attack();
+            return warrior->LongRangeAttack();
         }    
-        else 
+        else if ( warrior->getHealth() > 0)
         {
-            return 0;
+            return warrior->ShortRangeAttack();
         }
             
     }
+    int Enemy::TakeRangeDamage(Warrior* warrior, int& health)
+    {
+        
+        if (warrior->getHealth() > 0)
+        {
+            return warrior->ShortRangeAttack();
+        }
+
+    }
+
+
+    int Enemy::getHealth()
+    {
+        
+        return health;
+
+    }
+
+
 }

@@ -18,17 +18,39 @@ namespace Character
 		return normalAttack + winterPower;
 	}
 
-    int WinterBear::TakeDamage(Warrior* warrior, int& health)
-    {
-        if (warrior->getHealth() > 0)
-        {
+   
 
-            return warrior->Attack() - winterShield;
-        }
-        else
-        {
-            return 0;
-        }
+	int WinterBear::TakeMeleeDamage(Warrior* warrior, int& health)
+	{
+		if (warrior->getHealth() > 0)
+		{
+
+			return warrior->ShortRangeAttack() - winterShield;
+		}
+		else
+		{
+			return 0;
+		}
+
+	}
+	int WinterBear::TakeRangeDamage(Warrior* warrior, int& health)
+	{
+		if (warrior->getHealth() > 0)
+		{
+
+			return warrior->LongRangeAttack() - winterShield;
+		}
+		else
+		{
+			return 0;
+		}
+
+	}
+
+    int WinterBear::getHealth()
+    {
+
+        return health;
 
     }
 }

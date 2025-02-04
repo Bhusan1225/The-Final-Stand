@@ -6,7 +6,7 @@ namespace Character
 	{
 		health = maxHealth;
 		doublePower = 6;
-		doubleShield = warrior->Attack() - 1;
+		doubleShield = 5;
 		cout << "I am the GiantAlphaBear, and are wonna die." << endl;
 	}
 
@@ -18,12 +18,25 @@ namespace Character
 
 
 	}
-	int GiantAlphaBear::TakeDamage(Warrior* warrior, int& health)
+	int GiantAlphaBear::TakeMeleeDamage(Warrior* warrior, int& health)
 	{
 		if (warrior->getHealth() > 0)
 		{
 
-			return warrior->Attack() - doubleShield;
+			return warrior->ShortRangeAttack() - doubleShield;
+		}
+		else
+		{
+			return 0;
+		}
+
+	}
+	int GiantAlphaBear::TakeRangeDamage(Warrior* warrior, int& health)
+	{
+		if (warrior->getHealth() > 0)
+		{
+
+			return warrior->LongRangeAttack() - doubleShield;
 		}
 		else
 		{
@@ -32,8 +45,12 @@ namespace Character
 
 	}
 
+	int GiantAlphaBear::getHealth()
+	{
 
+		return health;
 
+	}
 
 
 

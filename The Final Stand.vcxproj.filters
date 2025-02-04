@@ -86,9 +86,6 @@
     <ClInclude Include="Header\Character\Enemies\GiantAlphaBear.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Game\BattleGround\Battleground.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Header\Game\WildEncounter\WildEncounterManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>

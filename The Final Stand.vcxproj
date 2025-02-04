@@ -139,7 +139,6 @@
     <ClInclude Include="Header\Game\Level\LevelManager.h" />
     <ClInclude Include="Header\Game\Level\GameLevel.h" />
     <ClInclude Include="Header\Character\Enemies\WinterBear.h" />
-    <ClInclude Include="Header\Game\BattleGround\Battleground.h" />
     <ClInclude Include="Header\Game\WildEncounter\WildEncounterManager.h" />
   </ItemGroup>
   <ItemGroup>
