@@ -1,35 +1,42 @@
 #pragma once
 
-#include "../../Header/Game/Level/LevelStatus.h"
-#include"../../Header/Game/Level/GameLevel.h"
-#include "../../Header/Character/Warrior/Warrior.h" 
+#include "../../Header/Game/Level/GameLevel.h"
+#include "../../Header/Game/WildEncounter/WildEncounterManager.h"
 
 
 
-namespace Game {
-	class Warrior;//forword Declaration
-class GameManager
+namespace Character
 {
-private:
-	LevelStatus levelStatus;
-	GameLevel currentLevel;
-	Character::Warrior* warrior;
-
-	bool WarriorAlive;
-public:
-	GameManager();;
-	~GameManager();
-	void PlyaerInitialize(int health, int shortRangedAttack, int longRangedAttack, int shieldProtection);
-	bool isWarriorAlive();
-	void PlayLevel();
-	void CompleteLevel();
-
-	void GameOver();
-	
-
-
-
-};
+	class Warrior; // Forward Declaration
+	class Enemy;   // Forward Declarations
 }
+
+
+namespace Game
+{
+	class GameManager
+	{
+	private:
+		GameLevel currentLevel;
+		
+		BattleGround* battleGround;  // Keep as a pointer if dynamically allocated
+		Character::Enemy* enemy;
+		Character::Warrior* warrior;
+
+
+
+	public:
+		GameManager();
+		~GameManager();
+
+		void WarriorInitialize(int health, int shortRangedAttack, int longRangedAttack, int shieldProtection);
+		
+		bool isWarriorAlive();
+		void PlayLevel();
+		void CompleteLevel();
+		void GameOver();
+	};
+}
+
 
 
