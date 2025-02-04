@@ -57,6 +57,9 @@
     <ClCompile Include="Source\Charactes\Enemies\GiantAlphaBear.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Game\WildEncounter\WildEncounterManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header\Character\Warrior\Warrior.h">
@@ -81,6 +84,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\Character\Enemies\GiantAlphaBear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Game\BattleGround\Battleground.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Game\WildEncounter\WildEncounterManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

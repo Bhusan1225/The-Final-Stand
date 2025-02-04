@@ -4,7 +4,7 @@
 
 namespace Character 
 {
-	class GiantAlphaBear
+	class GiantAlphaBear :public Enemy
 	{
 		int health = 120;
 		int maxHealth = 120;

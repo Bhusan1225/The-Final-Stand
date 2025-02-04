@@ -139,6 +139,8 @@
     <ClInclude Include="Header\Game\Level\LevelManager.h" />
     <ClInclude Include="Header\Game\Level\GameLevel.h" />
     <ClInclude Include="Header\Character\Enemies\WinterBear.h" />
+    <ClInclude Include="Header\Game\BattleGround\Battleground.h" />
+    <ClInclude Include="Header\Game\WildEncounter\WildEncounterManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Charactes\Enemies\GiantAlphaBear.cpp" />
@@ -149,6 +151,7 @@
     <ClCompile Include="Source\Charactes\Warrior\Warrior.cpp" />
     <ClCompile Include="Header\Game\Level\LevelStatus.h" />
     <ClCompile Include="Source\Charactes\Enemies\WinterBear.cpp" />
+    <ClCompile Include="Source\Game\WildEncounter\WildEncounterManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

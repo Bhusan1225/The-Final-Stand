@@ -9,6 +9,7 @@ namespace Character
         health = maxHealth;
         winterPower = 2; //multilple of 2
         winterShield = 5;
+        cout << "I am the WinterBear, I have power of ice, frizzzzzze you in ice." << endl;
         
     }
 	int WinterBear::Attack()
