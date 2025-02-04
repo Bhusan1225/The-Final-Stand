@@ -5,16 +5,16 @@
 namespace Level
 {
     
-        LevelManager::LevelManager() 
+        /*LevelManager::LevelManager() 
         {
 
 
 
-        }
+        }*/
 
         void LevelManager::GameOptions()
         {
-            cout << " the game will forword as you clear the levels\nEach levels will give you special powers and inventory to protect yourself\n and train you to fight with the boss enemy\n";
+            cout << " The game will forword as you clear the levels\nEach levels will give you special powers and inventory to protect yourself\n and train you to fight with the boss enemy\n";
             cout << " 1) Level 1" << endl;
             cout << " 2) Level 2" << endl;
             cout << " 3) Level 3" << endl;

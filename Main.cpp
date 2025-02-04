@@ -17,7 +17,18 @@ int main()
 	cin >> WorrierName;
 	cout << "Welcome " << WorrierName <<" to the Volly, I will guide you. So the Shadow does not distract you and you follow the right path."<< endl;
 
+
+
+	//ohk
+
 	LevelManager levelManager;  // Create an instance of LevelManager
+	
+	//there are lots of this wrong happening
+	//1 enemy spawning
+	//2 giantAlphabear spawning
+	//again enemy spawning
+	//4 winterbear spawnig 
+
 
 	levelManager.GameOptions();
 	

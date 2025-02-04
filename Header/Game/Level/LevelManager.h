@@ -28,7 +28,7 @@ namespace Level
 
 		public:
 			
-			LevelManager();
+			//LevelManager();
 			void GameOptions();
 			GameLevel ChooseGameLevel();
 
